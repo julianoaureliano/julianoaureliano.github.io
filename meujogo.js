@@ -9,15 +9,15 @@ let img;
 function preload() {
   img = loadImage('png/equacao1.png');
 }
-function setup() {
-  image(img, 0, 0);
-}
+
 
 function setup() {
   createCanvas(800, 600);
+  
 }
 
 function draw() {
+  image(img, 0, 0);
   
   switch(telaAtiva) {
     case 1:
