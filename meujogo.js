@@ -5,6 +5,13 @@ var y =175;
 //3 - sair
 var opcao = 1 
 var telaAtiva = 1;
+let img;
+function preload() {
+  img = loadImage('png/equacao1.png');
+}
+function setup() {
+  image(img, 0, 0);
+}
 
 function setup() {
   createCanvas(800, 600);
@@ -14,9 +21,9 @@ function draw() {
   
   switch(telaAtiva) {
     case 1:
-      menu();
-      if (keyCode === ENTER) 
-        jogo();
+      jogo();
+      //if (keyCode === ENTER) 
+        //jogo();
       break;
     case 2:
       regras();

@@ -1,13 +1,24 @@
 function jogo(){
-     //R, G, B
+ 
+     let posicaoCaixax = 35
+     let posicaoCaixay = 265 
+     let resposta ={
+        resposta1:mouseIsPressed && mouseX>40 && mouseX<338 && mouseY>271 && mouseY<367,
+        resposta2:mouseIsPressed && mouseX>440 && mouseX<738 && mouseY>271 && mouseY<367,
+        resposta3:mouseIsPressed && mouseX>40 && mouseX<338 && mouseY>401 && mouseY<496,
+        resposta4:mouseIsPressed && mouseX>440 && mouseX<738 && mouseY>401 && mouseY<496
+                    }
+    //R, G, B
      background('#00A4A6');
      //solidos
     fill('#FBF1F2');
     stroke('black');
     strokeWeight(1);
-    rect(230, 180, 300, 100, 10);
-    rect(230, 290, 300, 100, 10);
-    rect(230, 400, 300, 100, 10);
+    
+    rect(40, 270, 300, 100, 10);
+    rect(440, 400, 300, 100, 10);
+    rect(440, 270, 300, 100, 10);
+    rect(40, 400, 300, 100, 10);
     
     
     textStyle(BOLDITALIC);
@@ -15,14 +26,15 @@ function jogo(){
     
     fill('#CB4154')
     textFont('Bebas')
-    text('Juroot',170, 145)
+    text('IMAGEM',170, 145)
     //textos
     textSize(75);
     textFont('Georgia')
     fill('black');
-    text('Jogar', 265, 250);
-    text('Regras', 240, 360);
-    text('Voltar', 295, 475);
+    text('1', 170, 340);
+    text('2', 560, 340);
+    text('3', 170, 465);
+    text('4',560,465)
     //@
     textSize(15);
     fill('black');
@@ -33,7 +45,32 @@ function jogo(){
     noFill();
     stroke('#CB4154');
     strokeWeight(5);
-    rect(x, y, 310, 110);
-   
+    rect(posicaoCaixax, posicaoCaixay, 310, 110);
+    //coordenadas
+    textFont('Arial')
+    fill('black')
+    text('mauseX: '+mouseX,50,20)
+    text('mauseY: '+mouseY,50,40)
+    
+    
+    //ver a alternativa certa
+    if(resposta['resposta1']){
+        alert('Clickei no 1')
+
+    }
+    if(resposta['resposta2']){
+    alert('Clickei no 2')
+    noFill();
+    stroke('#CB4154');
+    strokeWeight(5);
+    rect(500, posicaoCaixay, 310, 110)
+    }
+    if(resposta['resposta3']){
+        alert('Clickei no 3')   
+    }
+    if(resposta['resposta4']){
+        alert('Clickei no 4')
+    }
+    
     
 }
