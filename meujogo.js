@@ -17,7 +17,7 @@ function setup() {
 }
 
 function draw() {
-  image(img, 0, 0);
+  
   
   switch(telaAtiva) {
     case 1:
@@ -33,6 +33,7 @@ function draw() {
       break;
       
   }
+  image(img, 30, 60);
 }
 
 
