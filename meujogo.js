@@ -8,16 +8,17 @@ var opcao = 1
 var telaAtiva = 1;
 let img;
 function preload() {
-  img = loadImage('png/equacao1.png');
   soundFormats('mp3', 'ogg')
   mySound = loadSound('music/kahoot.mp3');
+  img = loadImage('png/equacao1.png');
+
 }
 
 
 function setup() {
   createCanvas(800, 600);
   mySound.play();
- 	mySound.setLoop(true);
+ 	
 }
 
 function draw() {
