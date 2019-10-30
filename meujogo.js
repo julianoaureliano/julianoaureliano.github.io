@@ -21,9 +21,9 @@ function draw() {
   
   switch(telaAtiva) {
     case 1:
-      jogo();
-      //if (keyCode === ENTER) 
-        //jogo();
+      menu();
+      if (keyCode === ENTER) 
+        jogo();
       break;
     case 2:
       regras();
