@@ -15,6 +15,7 @@ function jogo(){
     stroke('black');
     strokeWeight(1);
     
+    rect(100, 50, 300, 100, 10);
     rect(40, 270, 300, 100, 10);
     rect(440, 400, 300, 100, 10);
     rect(440, 270, 300, 100, 10);
@@ -24,9 +25,7 @@ function jogo(){
     textStyle(BOLDITALIC);
     textSize(130);
     
-    fill('#CB4154')
-    textFont('Bebas')
-    text('IMAGEM',170, 145)
+    image(img, 300, 60);
     //textos
     textSize(75);
     textFont('Georgia')

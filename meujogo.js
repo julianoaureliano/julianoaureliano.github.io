@@ -33,7 +33,7 @@ function draw() {
       break;
       
   }
-  image(img, 30, 60);
+ 
 }
 
 
