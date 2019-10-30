@@ -9,7 +9,7 @@ var telaAtiva = 1;
 let img;
 function preload() {
   soundFormats('mp3', 'ogg')
-  mySound = loadSound('music/kahoot.mp3');
+  mySound = loadSound('music/opa.ogg');
   img = loadImage('png/equacao1.png');
 
 }
