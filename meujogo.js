@@ -1,3 +1,4 @@
+
 var x = 225;
 var y =175;
 //1 - jogar
@@ -8,12 +9,15 @@ var telaAtiva = 1;
 let img;
 function preload() {
   img = loadImage('png/equacao1.png');
+  soundFormats('mp3', 'ogg')
+  mySound = loadSound('music/kahoot.mp3');
 }
 
 
 function setup() {
   createCanvas(800, 600);
-  
+  mySound.play();
+ 	mySound.setLoop(true);
 }
 
 function draw() {

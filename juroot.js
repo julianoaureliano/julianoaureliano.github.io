@@ -1,8 +1,8 @@
 function jogo(){
- 
-     let posicaoCaixax = 35
-     let posicaoCaixay = 265 
-     let resposta ={
+
+        let posicaoCaixax = 35
+        let posicaoCaixay = 265 
+        let resposta ={
         resposta1:mouseIsPressed && mouseX>40 && mouseX<338 && mouseY>271 && mouseY<367,
         resposta2:mouseIsPressed && mouseX>440 && mouseX<738 && mouseY>271 && mouseY<367,
         resposta3:mouseIsPressed && mouseX>40 && mouseX<338 && mouseY>401 && mouseY<496,
@@ -14,18 +14,24 @@ function jogo(){
     fill('#FBF1F2');
     stroke('black');
     strokeWeight(1);
-    
-    rect(100, 50, 300, 100, 10);
+    //fundo da Imagem
+    rect(170, 40, 450, 150, 20);
+    //1
     rect(40, 270, 300, 100, 10);
-    rect(440, 400, 300, 100, 10);
-    rect(440, 270, 300, 100, 10);
+    //2
     rect(40, 400, 300, 100, 10);
+    //3
+    rect(440, 270, 300, 100, 10);
+    //4                
+    rect(440, 400, 300, 100, 10);
+    
+    
     
     
     textStyle(BOLDITALIC);
     textSize(130);
     
-    image(img, 300, 60);
+    image(img, 200, 60);
     //textos
     textSize(75);
     textFont('Georgia')
@@ -54,15 +60,15 @@ function jogo(){
     
     //ver a alternativa certa
     if(resposta['resposta1']){
-        alert('Clickei no 1')
+        alert('Parabens!!! INDO PARA SEGUNDA FASE...')
+        
+
 
     }
     if(resposta['resposta2']){
     alert('Clickei no 2')
-    noFill();
-    stroke('#CB4154');
-    strokeWeight(5);
-    rect(500, posicaoCaixay, 310, 110)
+    fase2();
+    
     }
     if(resposta['resposta3']){
         alert('Clickei no 3')   
@@ -73,3 +79,7 @@ function jogo(){
     
     
 }
+
+
+
+
