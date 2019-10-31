@@ -57,17 +57,18 @@ function jogo(){
     text('mauseX: '+mouseX,50,20)
     text('mauseY: '+mouseY,50,40)
     
-    
+    console.log(mouseIsPressed)
     //ver a alternativa certa
     if(resposta['resposta1']){
         alert('Parabens!!! INDO PARA SEGUNDA FASE...')
-        
+        fase2();
 
 
     }
     if(resposta['resposta2']){
     alert('Clickei no 2')
-    fase2();
+    
+    
     
     }
     if(resposta['resposta3']){

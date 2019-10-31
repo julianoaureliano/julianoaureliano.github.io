@@ -63,7 +63,7 @@ function fase2(){
    
    //ver a alternativa certa
    if(resposta['resposta1']){
-       alert('Clickei no 1')
+       alert('Clickei no 1 sem querer')
        menu();
        
 
