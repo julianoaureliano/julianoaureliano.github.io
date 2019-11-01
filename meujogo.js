@@ -24,6 +24,7 @@ function draw() {
   
   
   switch(telaAtiva) {
+    
     case 1:
       menu();
       if (keyCode === ENTER) 
@@ -37,8 +38,8 @@ function draw() {
       break;
       
   }
- 
 }
+
 
 
 function keyPressed() {
