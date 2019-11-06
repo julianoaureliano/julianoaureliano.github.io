@@ -1,5 +1,5 @@
 function jogo(){
-
+    
         let posicaoCaixax = 35
         let posicaoCaixay = 265 
         let resposta ={
@@ -60,22 +60,31 @@ function jogo(){
     console.log(mouseIsPressed)
     //ver a alternativa certa
     if(resposta['resposta1']){
+        
+        winSound.play();
         alert('Parabens!!! INDO PARA SEGUNDA FASE...')
-        fase2();
+        mouseIsPressed=false
+        telaAtiva=4
 
 
     }
     if(resposta['resposta2']){
+        loseSound.play();
     alert('Clickei no 2')
+    mouseIsPressed=false
     
     
     
     }
     if(resposta['resposta3']){
+        loseSound.play();
         alert('Clickei no 3')   
+        mouseIsPressed=false
     }
     if(resposta['resposta4']){
+        loseSound.play();
         alert('Clickei no 4')
+        mouseIsPressed=false
     }
     
     

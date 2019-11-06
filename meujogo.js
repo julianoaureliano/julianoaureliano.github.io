@@ -8,14 +8,19 @@ var opcao = 1
 var telaAtiva = 1;
 let img;
 function preload() {
-
+  soundFormats('mp3', 'ogg');
   img = loadImage('png/equacao1.png');
-
+  mySound = loadSound('music/kahoot.mp3');
+  winSound = loadSound('music/win.mp3');
+  loseSound = loadSound('music/lose.mp3')
+  
 }
 
 
 function setup() {
   createCanvas(800, 600);
+  mySound.play();
+ 	mySound.setLoop(true);
   
  	
 }
@@ -36,7 +41,12 @@ function draw() {
     case 3:
       sair();
       break;
-      
+    case 4:
+      fase2();
+      break;
+    case 5:
+      perdeu();
+      break;
   }
 }
 
@@ -45,7 +55,7 @@ function draw() {
 function keyPressed() {
   console.log(keyCode);
   //logica das telas
-  if(telaAtiva==2 || telaAtiva==3)
+  if(telaAtiva==2 || telaAtiva==3 || telaAtiva ==5 && keyCode==27 )
       telaAtiva=1;
   
   if (keyCode === ENTER) 
@@ -73,6 +83,7 @@ function keyPressed() {
        }     
 	    }
     }
+    
 }
 
 

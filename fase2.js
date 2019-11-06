@@ -1,5 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////
 // FASE 2
+
 function fase2(){
     
     let posicaoCaixax = 35
@@ -63,20 +64,27 @@ function fase2(){
    
    //ver a alternativa certa
    if(resposta['resposta1']){
-       alert('Clickei no 1 sem querer')
-       menu();
+       
+       mouseIsPressed=false
+       alert('Voce Perdeu')
+       telaAtiva=5
+       
        
 
 
    }
    if(resposta['resposta2']){
+    mouseIsPressed=false
    alert('Clickei no 2')
    
    }
    if(resposta['resposta3']){
-       alert('Clickei no 3')   
+    mouseIsPressed=false
+       alert('Clickei no 3') 
+
    }
    if(resposta['resposta4']){
+    mouseIsPressed=false
        alert('Clickei no 4')
    }
    

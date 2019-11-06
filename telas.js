@@ -34,6 +34,8 @@ function menu() {
     stroke('#CB4154');
     strokeWeight(5);
     rect(x, y, 310, 110);
+    
+    
   
   }
 //===========================================
@@ -70,7 +72,24 @@ function sair() {
 }
 //===========================================
 //tela sair
+function perdeu() {
+  //R, G, B
+ background('#7FDBFF');
+  
+ fill('white');
+ stroke('black');
+ strokeWeight(1);
+ 
+ textSize(28);
+ fill('black');
+ 
+ text('Voce Perdeu', 40, 55);
+ text('Aperte "esc" para SAIR!! ', 40, 100);
+ text('Aperte "ENTER" para CONTINUAR!! ', 40, 200);
 
+ 
+ 
+}
 
 
 
