@@ -18,6 +18,7 @@ function preload() {
   mySound = loadSound('music/kahoot.mp3');
   winSound = loadSound('music/win.mp3');
   loseSound = loadSound('music/lose.mp3')
+  regraImage=loadImage('png/regras.png')
   
 }
 

@@ -54,7 +54,8 @@ function menu() {
    textSize(28);
    fill('black');
    
-   text('Aqui vao as regras', 40, 55);
+   
+   image(regraImage, 0, 0)
  }
 
 //===========================================
