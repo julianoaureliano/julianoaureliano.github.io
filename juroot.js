@@ -24,14 +24,14 @@ function jogo(){
     rect(440, 270, 300, 100, 10);
     //4                
     rect(440, 400, 300, 100, 10);
-    
+    image(mold, 0, 0);
     
     
     
     textStyle(BOLDITALIC);
     textSize(130);
     
-    image(img, 200, 60);
+    image(img[1], 200, 60);
     //textos
     textSize(75);
     textFont('Georgia')
@@ -50,7 +50,7 @@ function jogo(){
     noFill();
     stroke('#CB4154');
     strokeWeight(5);
-    rect(posicaoCaixax, posicaoCaixay, 310, 110);
+    
     //coordenadas
     textFont('Arial')
     fill('black')

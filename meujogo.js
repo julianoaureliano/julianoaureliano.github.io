@@ -6,10 +6,15 @@ var y =175;
 //3 - sair
 var opcao = 1 
 var telaAtiva = 1;
-let img;
+let img=[];
+let mold;
+
 function preload() {
   soundFormats('mp3', 'ogg');
-  img = loadImage('png/equacao1.png');
+  for(i=1;i<=7;i++){
+    img[i] = loadImage('png/equacao'+i+'.png');
+  }
+  mold= loadImage('png/moldura.png')
   mySound = loadSound('music/kahoot.mp3');
   winSound = loadSound('music/win.mp3');
   loseSound = loadSound('music/lose.mp3')
@@ -30,8 +35,10 @@ function draw() {
   
   switch(telaAtiva) {
     
-    case 1:
+    case 1: 
+     
       menu();
+
       if (keyCode === ENTER) 
         jogo();
       break;
@@ -47,6 +54,15 @@ function draw() {
     case 5:
       perdeu();
       break;
+    case 6:
+      fase3();
+      break; 
+    case 7:
+      fase4();
+      break;
+    case 8:
+      fase5();
+      break;      
   }
 }
 

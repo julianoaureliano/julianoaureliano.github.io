@@ -15,7 +15,9 @@ function menu() {
     
     fill('#CB4154')
     textFont('Bebas')
+    image(mold, 0, 0);
     text('Juroot',170, 145)
+    
     //textos
     textSize(75);
     textFont('Georgia')
@@ -42,6 +44,7 @@ function menu() {
 //tela regras
   function regras() {
     //R, G, B
+    
    background('#7FDBFF');
     
    fill('white');
@@ -75,17 +78,19 @@ function sair() {
 function perdeu() {
   //R, G, B
  background('#7FDBFF');
-  
+ 
  fill('white');
  stroke('black');
  strokeWeight(1);
  
- textSize(28);
+ textSize(100);
  fill('black');
- 
- text('Voce Perdeu', 40, 55);
- text('Aperte "esc" para SAIR!! ', 40, 100);
- text('Aperte "ENTER" para CONTINUAR!! ', 40, 200);
+ image(mold, 0, 0);
+ text('Você Perdeu', 100, 100);
+ textSize(50);
+ text('Aperte "Esc" para SAIR!! ', 80, 230);
+ textSize(40);
+ text('Aperte "ENTER" para CONTINUAR!! ', 30, 400);
 
  
  

@@ -1,10 +1,7 @@
-////////////////////////////////////////////////////////////////////////////
-// FASE 2
-
-function fase2(){
+function fase4(){
     
-    let posicaoCaixax = 35
-    let posicaoCaixay = 265 
+    
+
     let resposta ={
         resposta1:mouseIsPressed && mouseX>40 && mouseX<338 && mouseY>271 && mouseY<367,
         resposta2:mouseIsPressed && mouseX>440 && mouseX<738 && mouseY>271 && mouseY<367,
@@ -28,22 +25,23 @@ function fase2(){
    rect(440, 270, 300, 100, 10);
    //4                
    rect(440, 400, 300, 100, 10);
-   
+   image(mold, 0, 0);
    
    
    
    textStyle(BOLDITALIC);
    textSize(130);
-   
+   image(img[4], 185, 65);
    
    //textos
    textSize(75);
    textFont('Georgia')
    fill('black');
-   text('1', 170, 340);
-   text('2', 560, 340);
-   text('3', 170, 465);
-   text('4',560,465)
+   //Equaçao : 5 x ? = 40
+   text('10', 150, 340);//resposta1
+   text('40', 540, 340);//resposta2
+   text('8', 160, 475);//resposta3
+   text('7',560,465);//resposta
    //@
    textSize(15);
    fill('black');
@@ -51,10 +49,7 @@ function fase2(){
  
  
    //caixa vermelha
-   noFill();
-   stroke('#CB4154');
-   strokeWeight(5);
-   rect(posicaoCaixax, posicaoCaixay, 310, 110);
+
    //coordenadas
    textFont('Arial')
    fill('black')
@@ -64,28 +59,38 @@ function fase2(){
    
    //ver a alternativa certa
    if(resposta['resposta1']){
-       
        mouseIsPressed=false
-       alert('Voce Perdeu')
+       loseSound.play();
+       alert('5 x 10 = 50')
+       alert('Você ERROU!!')
        telaAtiva=5
-       
-       
-
-
    }
    if(resposta['resposta2']){
     mouseIsPressed=false
-   alert('Clickei no 2')
+    loseSound.play();
+    alert('5 x 40 = 200')
+    alert('Você ERROU!!')
+  
+   telaAtiva=5
    
    }
    if(resposta['resposta3']){
     mouseIsPressed=false
-       alert('Clickei no 3') 
+    winSound.play();
+        alert('5 x 8 = 40')
+        alert('Parabéns')
+       telaAtiva=8
 
+        
    }
    if(resposta['resposta4']){
     mouseIsPressed=false
-       alert('Clickei no 4')
+    loseSound.play();
+    alert('5 x 7 = 35')
+    alert('Você ERROU!!')
+       
+       telaAtiva=5
+       
    }
    
    
