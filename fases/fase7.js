@@ -95,7 +95,7 @@ if(respAleatorio[2]==1){
        winSound.play();
        alert('5 x '+numAleatorioDois+' = '+(numAleatorioDois*5))
        alert('acertou!!')
-       telaAtiva=5
+       telaAtiva=11
        
 
        
@@ -150,7 +150,7 @@ if(respAleatorio[2]==2){
      winSound.play();
      alert('5 x '+numAleatorioDois+' = '+(5*numAleatorioDois))
      alert('acertou!!')    
-     telaAtiva=7    
+     telaAtiva=11    
     }
     if(resposta['resposta3']){
         mouseIsPressed=false
@@ -198,7 +198,7 @@ if(respAleatorio[2]==3){
      winSound.play();
      alert('5 x '+numAleatorioDois+' = '+(5*numAleatorioDois))
      alert('acertou!!')    
-     telaAtiva=7
+     telaAtiva=11
            
     }
     if(resposta['resposta4']){
@@ -246,7 +246,7 @@ if(respAleatorio[2]==4){
         alert('5 x '+numAleatorioDois+' = '+(5*numAleatorioDois))
         alert('acertou!!')
     
-    telaAtiva=7
+    telaAtiva=11
        
         
     }

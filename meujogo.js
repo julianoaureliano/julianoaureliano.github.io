@@ -37,10 +37,10 @@ function draw() {
   switch(telaAtiva) {
     
     case 1: 
-    fase8();
-     /* menu();
+    
+      menu();
       if (keyCode === ENTER) 
-        jogo();*/
+        jogo();
       break;
     case 2:
       regras();
