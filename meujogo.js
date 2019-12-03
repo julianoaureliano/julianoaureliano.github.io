@@ -19,6 +19,7 @@ function preload() {
   winSound = loadSound('music/win.mp3');
   loseSound = loadSound('music/lose.mp3')
   regraImage=loadImage('png/regras.png')
+  zerouImage = loadImage('png/zerou.jpg')
   
 }
 
@@ -37,7 +38,7 @@ function draw() {
   switch(telaAtiva) {
     
     case 1: 
-    
+      
       menu();
       if (keyCode === ENTER) 
         jogo();
@@ -71,7 +72,10 @@ function draw() {
       break;
     case 11:
         fase8();
-      break;                
+      break;
+    case 12:
+        zerou();
+      break;                    
   }
 }
 
@@ -83,8 +87,10 @@ function keyPressed() {
   if(telaAtiva==2 || telaAtiva==3 || telaAtiva ==5 && keyCode==27 )
       telaAtiva=1;
   
-  if (keyCode === ENTER) 
+  if (keyCode === ENTER && telaAtiva==1 || telaAtiva==5) 
       telaAtiva=opcao;
+      if(keyCode=== ENTER && telaAtiva==12)
+      window.location.reload()
       //teclas
   if (keyCode === DOWN_ARROW) {
     if(y<300){

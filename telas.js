@@ -97,7 +97,25 @@ function perdeu() {
  
 }
 
+function zerou() {
+  keyCode=false
+  if (keyCode == ENTER){
+    window.location.reload()
+  }
 
+  //R, G, B
+ background('#7FDBFF');
+  
+ fill('white');
+ stroke('black');
+ strokeWeight(1);
+ 
+ textSize(50);
+ fill('black');
+ image(zerouImage, 0, 0);
+
+ 
+}
 
 
 

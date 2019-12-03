@@ -85,10 +85,10 @@ function fase6(){
    fill('black');
    text('@julianoaureliano',300,570)   
  
-  
+   textSize(95);
    text(numAleatorioUm,100,100)
    text('3 x ?= '+(3*numAleatorioUm),200,130)
-   textSize(30);
+   
    //caixa vermelha
    noFill();
    stroke('#CB4154');
@@ -119,7 +119,7 @@ if(respAleatorio[1]==1){
     alert('3 x '+(numAleatorioUm+3)+' = '+((numAleatorioUm+3)*3))
     alert('Você ERROU!!')
     alert('A resposta certa é : '+'3 x '+numAleatorioUm+' = '+(numAleatorioUm*3))       
-    telaAtiva=5
+    window.location.reload()  
    
    }
    if(resposta['resposta3']){
@@ -128,7 +128,7 @@ if(respAleatorio[1]==1){
         alert('Você ERROU!!')
         alert('3 x '+(numAleatorioUm+2)+' = '+((numAleatorioUm+2)*3))
         alert('A resposta certa é : '+'3 x '+numAleatorioUm+' = '+(numAleatorioUm*3))        
-        telaAtiva=5
+        window.location.reload()  
    }
    if(resposta['resposta4']){
     mouseIsPressed=false
@@ -136,7 +136,7 @@ if(respAleatorio[1]==1){
     alert('Você ERROU!!')
     alert('3 x '+(numAleatorioUm+1)+' = '+((numAleatorioUm+1)*3))
     alert('A resposta certa é : '+'3 x '+numAleatorioUm+' = '+(numAleatorioUm*3))       
-    telaAtiva=5
+    window.location.reload()  
        
    }
 }
@@ -148,7 +148,7 @@ if(respAleatorio[1]==2){
         alert('Você ERROU!!')
         alert('3 x '+(numAleatorioUm+3)+' = '+((numAleatorioUm+3)*3))
         alert('A resposta certa é : '+'3 x '+numAleatorioUm+' = '+(numAleatorioUm*3))           
-        telaAtiva=5
+        window.location.reload()  
            
        }
  
@@ -168,7 +168,7 @@ if(respAleatorio[1]==2){
         alert('Você ERROU!!')
         alert('3 x '+(numAleatorioUm+2)+' = '+((numAleatorioUm+2)*3))
         alert('A resposta certa é : '+'3 x '+numAleatorioUm+' = '+(numAleatorioUm*3))           
-        telaAtiva=5
+        window.location.reload()  
     }
     if(resposta['resposta4']){
         mouseIsPressed=false
@@ -176,7 +176,7 @@ if(respAleatorio[1]==2){
         alert('Você ERROU!!')
         alert('3 x '+(numAleatorioUm+1)+' = '+((numAleatorioUm+1)*3))
         alert('A resposta certa é : '+'3 x '+numAleatorioUm+' = '+(numAleatorioUm*3))           
-        telaAtiva=5
+        window.location.reload()  
         
     }
 }
@@ -188,7 +188,7 @@ if(respAleatorio[1]==3){
         alert('Você ERROU!!')
         alert('3 x '+(numAleatorioUm+3)+' = '+((numAleatorioUm+3)*3))
         alert('A resposta certa é : '+'3 x '+numAleatorioUm+' = '+(numAleatorioUm*3))           
-        telaAtiva=5
+        window.location.reload()  
            
        }
  
@@ -217,7 +217,7 @@ if(respAleatorio[1]==3){
         alert('Você ERROU!!')
         alert('3 x '+(numAleatorioUm+1)+' = '+((numAleatorioUm+1)*3))
         alert('A resposta certa é : '+'3 x '+numAleatorioUm+' = '+(numAleatorioUm*3))           
-        telaAtiva=5
+        window.location.reload()  
         
     }
 }
@@ -229,7 +229,7 @@ if(respAleatorio[1]==4){
         alert('Você ERROU!!')
         alert('3 x '+(numAleatorioUm+1)+' = '+((numAleatorioUm+1)*3))
         alert('A resposta certa é : '+'3 x '+numAleatorioUm+' = '+(numAleatorioUm*3))           
-        telaAtiva=5
+        window.location.reload()  
            
        }
 
@@ -239,7 +239,7 @@ if(respAleatorio[1]==4){
         alert('Você ERROU!!')
         alert('3 x '+(numAleatorioUm+3)+' = '+((numAleatorioUm+3)*3))
         alert('A resposta certa é : '+'3 x '+numAleatorioUm+' = '+(numAleatorioUm*3))
-        telaAtiva=5
+        window.location.reload()  
     }
     if(resposta['resposta3']){ 
         mouseIsPressed=false
@@ -247,7 +247,7 @@ if(respAleatorio[1]==4){
         alert('Você ERROU!!')
         alert('3 x '+(numAleatorioUm+2)+' = '+((numAleatorioUm+2)*3))
         alert('A resposta certa é : '+'3 x '+numAleatorioUm+' = '+(numAleatorioUm*3))
-        telaAtiva=5
+        window.location.reload()  
       
     }
     if(resposta['resposta4']){

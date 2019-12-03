@@ -72,10 +72,10 @@ numAleatorioDois=Math.floor(Math.random() * 10)
    fill('black');
    text('@julianoaureliano',300,570)
  
-  
+   textSize(95);
    text(numAleatorioDois,100,100)
    text('5 x ?= '+(5*numAleatorioDois),185,130)
-   textSize(30);
+   
    //caixa vermelha
    noFill();
    stroke('#CB4154');
@@ -107,7 +107,7 @@ if(respAleatorio[2]==1){
     alert('Você ERROU!!')
     alert('A resposta certa é : '+'5 x '+numAleatorioDois+' = '+(numAleatorioDois*5))
     window.location.reload()       
-    telaAtiva=5
+    
 
    
    }
@@ -117,7 +117,7 @@ if(respAleatorio[2]==1){
         alert('Você ERROU!!')
         alert('5 x '+(numAleatorioDois+2)+' = '+((numAleatorioDois+2)*5))
         alert('A resposta certa é : '+'5 x '+numAleatorioDois+' = '+(numAleatorioDois*5))        
-        telaAtiva=5
+        window.location.reload()  
    }
    if(resposta['resposta4']){
     mouseIsPressed=false
@@ -125,7 +125,7 @@ if(respAleatorio[2]==1){
     alert('Você ERROU!!')
     alert('5 x '+(numAleatorioDois+1)+' = '+((numAleatorioDois+1)*5))
     alert('A resposta certa é : '+'5 x '+numAleatorioDois+' = '+(numAleatorioDois*5))       
-    telaAtiva=5
+    window.location.reload()  
        
    }
 }
@@ -137,7 +137,7 @@ if(respAleatorio[2]==2){
         alert('Você ERROU!!')
         alert('5 x '+(numAleatorioDois+3)+' = '+((numAleatorioDois+3)*5))
         alert('A resposta certa é : '+'5 x '+numAleatorioDois+' = '+(numAleatorioDois*5))           
-        telaAtiva=5
+        window.location.reload()  
            
        }
  
@@ -157,7 +157,7 @@ if(respAleatorio[2]==2){
         alert('Você ERROU!!')
         alert('5 x '+(numAleatorioDois+2)+' = '+((numAleatorioDois+2)*5))
         alert('A resposta certa é : '+'5 x '+numAleatorioDois+' = '+(numAleatorioDois*5))           
-        telaAtiva=5
+        window.location.reload()  
     }
     if(resposta['resposta4']){
         mouseIsPressed=false
@@ -165,7 +165,7 @@ if(respAleatorio[2]==2){
         alert('Você ERROU!!')
         alert('5 x '+(numAleatorioDois+1)+' = '+((numAleatorioDois+1)*5))
         alert('A resposta certa é : '+'5 x '+numAleatorioDois+' = '+(numAleatorioDois*5))           
-        telaAtiva=5
+        window.location.reload()  
         
     }
 }
@@ -177,7 +177,7 @@ if(respAleatorio[2]==3){
         alert('Você ERROU!!')
         alert('5 x '+(numAleatorioDois+3)+' = '+((numAleatorioDois+3)*5))
         alert('A resposta certa é : '+'5 x '+numAleatorioDois+' = '+(numAleatorioDois*5))           
-        telaAtiva=5
+        window.location.reload()  
            
        }
  
@@ -190,7 +190,7 @@ if(respAleatorio[2]==3){
         alert('Você ERROU!!')
         alert('5 x '+(numAleatorioDois+2)+' = '+((numAleatorioDois+2)*5))
         alert('A resposta certa é : '+'5 x '+numAleatorioDois+' = '+(numAleatorioDois*5))
-        telaAtiva = 5
+        window.location.reload()  
     }
     if(resposta['resposta3']){       
      mouseIsPressed=false
@@ -206,7 +206,7 @@ if(respAleatorio[2]==3){
         alert('Você ERROU!!')
         alert('5 x '+(numAleatorioDois+1)+' = '+((numAleatorioDois+1)*5))
         alert('A resposta certa é : '+'5 x '+numAleatorioDois+' = '+(numAleatorioDois*5))           
-        telaAtiva=5
+        window.location.reload()  
         
     }
 }
@@ -218,7 +218,7 @@ if(respAleatorio[2]==4){
         alert('Você ERROU!!')
         alert('5 x '+(numAleatorioDois+1)+' = '+((numAleatorioDois+1)*5))
         alert('A resposta certa é : '+'5 x '+numAleatorioDois+' = '+(numAleatorioDois*5))           
-        telaAtiva=5
+        window.location.reload()  
            
        }
 
@@ -228,7 +228,7 @@ if(respAleatorio[2]==4){
         alert('Você ERROU!!')
         alert('5 x '+(numAleatorioDois+3)+' = '+((numAleatorioDois+3)*5))
         alert('A resposta certa é : '+'5 x '+numAleatorioDois+' = '+(numAleatorioDois*5))
-        telaAtiva=5
+        window.location.reload()  
     }
     if(resposta['resposta3']){ 
         mouseIsPressed=false
@@ -236,7 +236,7 @@ if(respAleatorio[2]==4){
         alert('Você ERROU!!')
         alert('5 x '+(numAleatorioDois+2)+' = '+((numAleatorioDois+2)*5))
         alert('A resposta certa é : '+'5 x '+numAleatorioDois+' = '+(numAleatorioDois*5))
-        telaAtiva=5
+        window.location.reload()  
       
     }
     if(resposta['resposta4']){
