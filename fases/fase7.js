@@ -68,9 +68,9 @@ numAleatorioDois=Math.floor(Math.random() * 10)
                  }
 
    //@
-   textSize(95);
+   textSize(15);
    fill('black');
-   
+   text('@julianoaureliano',300,570)
  
   
    text(numAleatorioDois,100,100)
@@ -84,7 +84,7 @@ numAleatorioDois=Math.floor(Math.random() * 10)
    //coordenadas
    textFont('Arial')
    fill('black')
-   text('@julianoaureliano',300,570)
+   
    
    
    //se a resposta aleatoria for igual a 1

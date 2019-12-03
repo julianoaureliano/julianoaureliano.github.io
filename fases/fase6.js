@@ -81,7 +81,7 @@ function fase6(){
                  }
 
    //@
-   textSize(95);
+   textSize(15);
    fill('black');
    text('@julianoaureliano',300,570)   
  

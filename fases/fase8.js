@@ -68,7 +68,7 @@ numAleatorioThree=Math.floor(Math.random() * 10)
                  }
 
    //@
-   textSize(95);
+   textSize(15);
    fill('black');
    text('@julianoaureliano',300,570) 
  
