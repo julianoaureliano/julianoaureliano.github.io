@@ -54,8 +54,7 @@ function jogo(){
     //coordenadas
     textFont('Arial')
     fill('black')
-    text('mauseX: '+mouseX,50,20)
-    text('mauseY: '+mouseY,50,40)
+   
     
     console.log(mouseIsPressed)
     //ver a alternativa certa

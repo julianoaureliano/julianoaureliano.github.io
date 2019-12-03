@@ -70,7 +70,7 @@ numAleatorioThree=Math.floor(Math.random() * 10)
    //@
    textSize(95);
    fill('black');
-   
+   text('@julianoaureliano',300,570) 
  
   
    text(numAleatorioThree,100,100)
@@ -84,8 +84,7 @@ numAleatorioThree=Math.floor(Math.random() * 10)
    //coordenadas
    textFont('Arial')
    fill('black')
-   text('mauseX: '+mouseX,50,20)
-   text('mauseY: '+mouseY,50,40)
+
    
    
    //se a resposta aleatoria for igual a 1

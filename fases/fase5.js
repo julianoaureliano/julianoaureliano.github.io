@@ -53,8 +53,7 @@ function fase5(){
    //coordenadas
    textFont('Arial')
    fill('black')
-   text('mauseX: '+mouseX,50,20)
-   text('mauseY: '+mouseY,50,40)
+
    
    //Equaçao : 6 x ? = 36
    //ver a alternativa certa

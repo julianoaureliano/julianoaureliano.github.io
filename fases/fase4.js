@@ -53,8 +53,7 @@ function fase4(){
    //coordenadas
    textFont('Arial')
    fill('black')
-   text('mauseX: '+mouseX,50,20)
-   text('mauseY: '+mouseY,50,40)
+
    
    
    //ver a alternativa certa

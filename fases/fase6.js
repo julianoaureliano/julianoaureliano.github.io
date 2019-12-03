@@ -83,7 +83,7 @@ function fase6(){
    //@
    textSize(95);
    fill('black');
-   
+   text('@julianoaureliano',300,570)   
  
   
    text(numAleatorioUm,100,100)
@@ -97,8 +97,7 @@ function fase6(){
    //coordenadas
    textFont('Arial')
    fill('black')
-   text('mauseX: '+mouseX,50,20)
-   text('mauseY: '+mouseY,50,40)
+
    
    
    //se a resposta aleatoria for igual a 1
