@@ -31,7 +31,7 @@ numAleatorioThree=Math.floor(Math.random() * 10)
    image(mold, 0, 0);
    
 
-   text(respAleatorio[3],100,200)
+  
    
    
    textStyle(BOLDITALIC);
@@ -73,7 +73,7 @@ numAleatorioThree=Math.floor(Math.random() * 10)
    text('@julianoaureliano',300,570) 
  
    textSize(95);
-   text(numAleatorioThree,100,100)
+   
    text('8 x ?= '+(8*numAleatorioThree),185,130)
    textSize(30);
    //caixa vermelha

@@ -31,7 +31,7 @@ numAleatorioDois=Math.floor(Math.random() * 10)
    image(mold, 0, 0);
    
 
-   text(respAleatorio[2],100,200)
+   
    
    
    textStyle(BOLDITALIC);
@@ -73,7 +73,7 @@ numAleatorioDois=Math.floor(Math.random() * 10)
    text('@julianoaureliano',300,570)
  
    textSize(95);
-   text(numAleatorioDois,100,100)
+   
    text('5 x ?= '+(5*numAleatorioDois),185,130)
    
    //caixa vermelha

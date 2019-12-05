@@ -44,7 +44,7 @@ function fase6(){
    image(mold, 0, 0);
    
 
-   text(respAleatorio[1],100,200)
+   
    
    
    textStyle(BOLDITALIC);
@@ -86,7 +86,7 @@ function fase6(){
    text('@julianoaureliano',300,570)   
  
    textSize(95);
-   text(numAleatorioUm,100,100)
+   
    text('3 x ?= '+(3*numAleatorioUm),200,130)
    
    //caixa vermelha
