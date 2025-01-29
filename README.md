@@ -6,3 +6,7 @@ O Jogo “JUROOT” foi inspirado em uma das maiores plataformas de aprendizado 
 Usei a biblioteca "P5 JS" , o jogo "JUROOT" foi totalmente feito em P5 e javascript (ambos são a mesma linguagem mas o P5 agiliza e facilita várias funcionalidades). As 5 primeiras fases são lineares, ou seja, uma equação fixa com opções fixas. As restantes são equações aleatórias mas de modo que obedeça uma ordem, exemplo: na primeira fase aleatória é 3 x ?= resultado, o número desconhecido (?) é aleatório, sendo assim a dificuldade para essa fase se mantém. 
 
 
+# Experimente:
+  ```bash
+ https://julianoaureliano.github.io/
+  ```
